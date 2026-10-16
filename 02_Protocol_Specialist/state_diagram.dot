@@ -1,0 +1,34 @@
+digraph AURA_FST {
+  rankdir=LR;
+  start [shape=point];
+  start -> IDLE;
+  CLOSED -> CLOSED [label="bye"];
+  CLOSED -> CLOSED [label="confirm"];
+  CLOSED -> CLOSED [label="deny"];
+  CLOSED -> CLOSED [label="diagnose"];
+  CLOSED -> CLOSED [label="greet"];
+  CLOSED -> CLOSED [label="repair"];
+  CLOSED -> CLOSED [label="status_query"];
+  DIAGNOSING -> CLOSED [label="bye"];
+  DIAGNOSING -> REPAIR_WAIT [label="confirm"];
+  DIAGNOSING -> READY [label="deny"];
+  DIAGNOSING -> REPAIR_WAIT [label="repair"];
+  IDLE -> CLOSED [label="bye"];
+  IDLE -> READY [label="greet"];
+  READY -> CLOSED [label="bye"];
+  READY -> DIAGNOSING [label="diagnose"];
+  READY -> READY [label="greet"];
+  READY -> REPAIR_WAIT [label="repair"];
+  READY -> REPORTING [label="status_query"];
+  REPAIRED -> CLOSED [label="bye"];
+  REPAIRED -> READY [label="greet"];
+  REPAIRED -> REPORTING [label="status_query"];
+  REPAIR_WAIT -> CLOSED [label="bye"];
+  REPAIR_WAIT -> REPAIRED [label="confirm"];
+  REPAIR_WAIT -> READY [label="deny"];
+  REPAIR_WAIT -> DIAGNOSING [label="diagnose"];
+  REPAIR_WAIT -> REPAIRED [label="repair"];
+  REPORTING -> CLOSED [label="bye"];
+  REPORTING -> DIAGNOSING [label="confirm"];
+  REPORTING -> READY [label="deny"];
+}

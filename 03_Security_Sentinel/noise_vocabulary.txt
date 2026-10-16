@@ -1,0 +1,10 @@
+# Mandatory noise vocabulary (placeholder list - replace with the official one from the mission brief if provided)
+plasma
+static
+flare
+quasar
+ion
+photon
+void
+sirius-b
+scatter

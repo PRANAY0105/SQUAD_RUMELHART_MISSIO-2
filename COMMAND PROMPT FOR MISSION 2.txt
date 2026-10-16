@@ -1,0 +1,9 @@
+cd C:\Users\GALVA\Downloads\CONVERSATIONAL AI\AURA_squad_submission-2\AURA_squad_submission2
+python 02_Protocol_Specialist/test_fst.py
+python 02_Protocol_Specialist/fst_dialogue_manager.py
+python 03_Security_Sentinel/noisy_channel_simulator.py
+python 04_Systems_Architect/run_all.py
+python 01_Data_Specialist/anti_turing_probe.py questions
+python 01_Data_Specialist/anti_turing_probe.py report
+
+
