@@ -1,2 +1,2 @@
-# SQUAD_RUMELHART_MISSIO-2
+# SQUAD_RUMELHART_MISSION-2
 The mission briefly describes the USSE Noosphere operating near the Sirius Binary System (SEC-02-CMA), where plasma radiation corrupts telemetry and distorts the subspace transceiver. Starfleet Command also questions whether AURA demonstrates conceptual understanding or only produces convincing symbol patterns. The engineering response is to make dialogue control explicit, define a repeatable model-evaluation protocol, and simulate a severely constrained noisy communication channel.
